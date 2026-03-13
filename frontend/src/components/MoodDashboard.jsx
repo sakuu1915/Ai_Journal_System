@@ -23,7 +23,7 @@ export default function MoodDashboard({ userId }) {
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/api/journal/mood-stats/${userId}`
+          `https://ai-journal-system-1.onrender.com/api/journal/mood-stats/${userId}`
         );
 
         const labels = res.data.map(item => item._id);
